@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: rnt-ink-tls
+spec:
+  secretName: rnt-ink
+  issueRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: rnt.ink
+  dnsNames:
+    - rnt.ink
+    - www.rnt.ink
