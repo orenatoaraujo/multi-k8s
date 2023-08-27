@@ -4,7 +4,7 @@ metadata:
   name: rnt-ink-tls
 spec:
   secretName: rnt-ink
-  issueRef:
+  issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
   commonName: rnt.ink
